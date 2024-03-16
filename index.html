@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h1>Yilin Wang</h1>
+    <!-- Hamburger Menu Button -->
+    <h1>Yilin Wang</h1>
+    <button class="hamburger-menu" onclick="toggleSidebar()">☰</button>
+
+    <div class="sidebar" id="mySidebar">
+        
         <nav class="main-nav">
             <a href="about">About</a><br>
-            <a href="computational-design">Computational Design Practice</a><br>
+            <a href="computational-design">Computational Design</a><br>
             <a href="architecture">Architecture</a><br>
         </nav>
         <div class="link-section">
@@ -26,7 +30,7 @@
     </div>
 
 
-    <div class="main-content">
+    <div class="main-content" id="mainContent">
         <!-- 关于我 -->
         <div class="project-item about" data-category="about">
             <div class="bio-container">
@@ -166,13 +170,6 @@
                     <h2>Bio</h2>
                     <p>Yilin is a multifaceted professional whose expertise spans across architecture, computational design, urban design, and web development. With a rich foundation in both theoretical and practical aspects of architecture, Yilin brings a unique blend of creativity, technical skill, and analytical thinking to the table. His work in various architectural and urban design projects showcase his ability to integrate technology with traditional design principles. Yilin's proficiency in advanced design and visualization tools, coupled with his passion for sustainable and innovative solutions, positions him as a dynamic force in the field of computational design and architecture.</p>
                 </div>
-            </div>
-
-            <!-- Details are hidden until clicked -->
-            <div class="project-detail">
-                <!-- Project details here -->
-                <!-- <p>Project description...</p> -->
-                <!-- Include other details like images, videos, etc. -->
             </div>
         </div>
 
@@ -421,8 +418,13 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <p style="text-align: center; color: gray;">© 2024 by Yilin Wang</p>
+        </footer>
     </div>
-
+    
     <script src="main.js"></script>
+    
 </body>
+
 </html>

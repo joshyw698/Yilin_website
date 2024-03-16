@@ -100,3 +100,15 @@ document.querySelectorAll('.project-item.cdp, .project-item.architecture').forEa
 //         this.classList.toggle('expanded');
 //     });
 // });
+
+function toggleSidebar() {
+  var sidebar = document.getElementById("mySidebar");
+  var content = document.getElementById("mainContent");
+  sidebar.classList.toggle('active');
+  content.classList.toggle('shift');
+}
+
+function toggleSidebar() {
+  var sidebar = document.getElementById("mySidebar");
+  sidebar.classList.toggle('active');
+}
